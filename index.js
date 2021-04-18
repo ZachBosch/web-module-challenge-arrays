@@ -46,7 +46,7 @@ Use the copy function below to do the following:
 */
 
 function copy(array) {
-  return array;
+  return array.slice(0);
 }
 copy(originalFlavors);
 
@@ -63,8 +63,9 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 function is31Flavors(originalFlavors) {
   if (originalFlavors.length === 31) {
     return true;
+  } else {
+    return false;
   }
-  return false;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
